@@ -1,1 +1,6 @@
 @import "tailwindcss";
+@layer utilities {
+    .login-img {
+        background-image: url("../public/img/login-background.png");
+    }
+}

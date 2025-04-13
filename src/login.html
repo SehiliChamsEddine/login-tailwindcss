@@ -1,26 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="output.css">
+    <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+    </style>
     <title>Document</title>
 </head>
-<body class=" bg-gray-900 overflow-hidden flex  items-center justify-center min-h-screen w-[100vw]">
-    <img src="../public/img/login-background.png" class="absolute inset-0 min-w-[1700px] max-h-screen -z-10" alt="">
-    <!-- <div class = " "> -->
+<body class=" bg-gray-900 overflow-hidden min-h-screen">
+    <div class="flex  items-center justify-center  w-screen h-screen login-img bg-cover  bg-no-repeat">
+    
+
     <div class="bg-gray-800 p-5 flex flex-col text-white  gap-7 rounded-[10px] min-w-[400px] max-w-[500px] shadow-lg">
         <h2 class="text-center text-3xl font-bold" >Login</h2>
         <form class="p-5 flex flex-col " >
             <div class="flex flex-col gap-5  mb-5 content-between" >
                 <label for="email" class="text-gray-200 text-xl font-semibold">Email</label>
-                <input type="email" name="email" id="email" class="text-gray-200 bg-gray-600 p-3 rounded-xl text-xl  focus:outline-none focus:border-none  >
+                <input type="email" name="email" id="email" class="text-gray-200 bg-gray-600 p-3 rounded-xl text-xl  focus:outline-none focus:border-none " >
             </div>
             <div class = "flex flex-col gap-5 mb-7 content-between">
                 <label for="password" class=" text-xl text-gray-200 font-semibold">Password</label>
-                <input type="password" name="password" id="email" class="text-gray-200 bg-gray-600  p-3 rounded-xl text-xl  focus:outline-none focus:border-none">
+                <input type="password" name="password" id="password" class="text-gray-200 bg-gray-600  p-3 rounded-xl text-xl  focus:outline-none focus:border-none">
+              
             </div>
-            <button class="p-3 bg-blue-500 bg-gradient-to-r rounded-[6px] text-xl font-bold cursor-pointer  mb-5 ">Login</button>
+            <button class="p-3 bg-gradient-to-l from-blue-500 to-blue-700 rounded-[6px] text-xl font-bold cursor-pointer  mb-5 ">Login</button>
             <div class="flex gap-5 "> 
                 <p class="p-3 bg-gray-600 rounded-[6px] text-xl grow text-center font-bold flex gap-2 cursor-pointer hover:bg-gray-700 transition-colors duration-200">
                     <svg  xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 48 48">
@@ -39,6 +50,6 @@
         </form>
         
     </div>
-<!-- </div> -->
+</div>
 </body>
 </html>
